@@ -3,7 +3,6 @@ import pMap from 'p-map'
 import { chunk, flatten, orderBy } from 'lodash'
 import { utils as etherUtils, BigNumber } from 'ethers'
 import type { OpenseaResponse, Asset} from '../../../utils/openseaTypes'
-import type { GenArtResponse} from '../../../utils/genArtTypes'
 //import membershipIDs from '../../../data/memberships-ids.json'
 
 //function range(start, end) {
