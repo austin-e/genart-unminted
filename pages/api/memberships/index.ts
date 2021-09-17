@@ -6,9 +6,9 @@ import type { OpenseaResponse, Asset} from '../../../utils/openseaTypes'
 import type { GenArtResponse} from '../../../utils/genArtTypes'
 //import membershipIDs from '../../../data/memberships-ids.json'
 
-function range(start, end) {
-  return Array(end - start + 1).fill().map((_, idx) => start + idx)
-}
+//function range(start, end) {
+//  return Array(end - start + 1).fill().map((_, idx) => start + idx)
+//}
 
 
 //new idea! only grab ones that have available
