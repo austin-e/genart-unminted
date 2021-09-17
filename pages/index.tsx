@@ -47,10 +47,10 @@ const Memberships = ({ membership }: { membership: GenArtInfo }) =>
 const IndexPage = ({ memberships, lastUpdate }: Props) => {
   return (
     <div className="py-3 md:pb-0 font-mono flex flex-col justify-center items-center gap-4 pt-10 md:w-screen">
-      <h1 className="text-lg md:text-3xl">Virgin Memberships</h1>
+      <h1 className="text-lg md:text-3xl">Unminted Memberships</h1>
       <div className="text-center max-w-screen-md md:leading-loose">
         <p className="md:text-xl">
-          There are {memberships.length} bags for sale with Virgin Memberships. The floor
+          There are {memberships.length} bags for sale with Unminted Memberships. The floor
           price is {memberships[0].price} ETH.
         </p>
         <p className="md:text-lg pt-2">
