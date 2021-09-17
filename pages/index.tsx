@@ -2,7 +2,6 @@ import { GenArtInfo, fetchMemberships } from './api/memberships'
 import pMap from 'p-map'
 import { format as ts } from 'timeago.js'
 import { chunk, flatten, orderBy } from 'lodash'
-import type {GenArtResponse} from '../../utils/genArtTypes'
 
 export async function getStaticProps() {
   const data = await fetchMemberships()
