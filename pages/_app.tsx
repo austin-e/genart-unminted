@@ -21,15 +21,15 @@ function GenArtMemberships({ Component, pageProps }) {
           rel="stylesheet"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@worm_emoji" />
-        <meta property="og:url" content="https://GenArtMemberships.market" />
-        <meta property="og:title" content="memberships.market" />
+        <meta name="twitter:creator" content="@polk_jk" />
+        {/* <meta property="og:url" content="https://GenArtMemberships.market" /> */}
+        {/* <meta property="og:title" content="memberships.market" /> */}
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta
           property="og:description"
-          content="See the floor price of Divine memberships from the Loot project."
+          content="See the floor price of Unminted Gen.Art memberships from the Gen.Art DAO."
         />
-        <meta property="og:image" content="https://robes.market/og.png" />
+        <meta property="og:image" content="/og.png" />
         <script
           data-goatcounter="https://divinerobes.goatcounter.com/count"
           async
