@@ -9,7 +9,6 @@ import type { OpenseaResponse, Asset} from '../../../utils/openseaTypes'
 //new idea! only grab ones that have available
 
 var unminted = [ 
-  [
 13,
 15,
 31,
