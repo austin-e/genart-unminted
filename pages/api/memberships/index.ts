@@ -9,6 +9,7 @@ import type { OpenseaResponse, Asset} from '../../../utils/openseaTypes'
 //new idea! only grab ones that have available
 
 var unminted = [ 
+  [
 13,
 15,
 31,
@@ -33,7 +34,6 @@ var unminted = [
 221,
 222,
 223,
-224,
 225,
 227,
 228,
@@ -256,6 +256,7 @@ var unminted = [
 1031,
 1032,
 1033,
+1034,
 1034,
 1035,
 1036,
@@ -507,7 +508,6 @@ var unminted = [
 1827,
 1831,
 1832,
-1834,
 1835,
 1837,
 1845,
@@ -612,9 +612,6 @@ var unminted = [
 2117,
 2118,
 2121,
-2154,
-2155,
-2156,
 2161,
 2168,
 2169,
@@ -622,7 +619,6 @@ var unminted = [
 2171,
 2172,
 2179,
-2183,
 2186,
 2189,
 2202,
@@ -807,7 +803,6 @@ var unminted = [
 3147,
 3150,
 3152,
-3158,
 3161,
 3217,
 3221,
@@ -1002,11 +997,6 @@ var unminted = [
 3893,
 3897,
 3911,
-3923,
-3924,
-3925,
-3926,
-3927,
 3942,
 3959,
 3962,
@@ -1119,7 +1109,6 @@ var unminted = [
 4503,
 4504,
 4516,
-4522,
 4534,
 4555,
 4567,
@@ -1254,8 +1243,6 @@ export interface GenArtInfo {
 
 export const fetchMemberships = async () => {
   const data = await pMap(chunked, fetchMembershipPage, { concurrency: 1 })
-
-
   const mapped = flatten(data)
     .filter((d) => {
       return d.sell_orders && d.sell_orders.length && d.sell_orders[0].current_price.split('.')[0] > 0
@@ -1274,7 +1261,6 @@ export const fetchMemberships = async () => {
       }
     })
   
-
   return {
     memberships: orderBy(mapped, ['price', 'id'], ['asc', 'asc']),
     lastUpdate: new Date().toISOString(),
@@ -1284,6 +1270,7 @@ export const fetchMemberships = async () => {
 const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
   try {
     const data = await fetchMemberships()
+    console.log('test')
     res.status(200).json(data)
   } catch (err) {
     res.status(500).json({ statusCode: 500, message: err.message })
