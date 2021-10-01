@@ -36,7 +36,7 @@ const Memberships = ({ membership }: { membership: GenArtInfo }) =>
     <a href={membership.meta_url} target="_blank">
     <div className="m-auto pb-4 mb-8 flex flex-col justify-center items-center gap-2 p-4 md:m-4 border border-gold transform hover:scale-105 transition-all bg-gold w-full md:w-96">
       <div className="text-center">
-      <p className="text-lg">DYOR. Please click and confirm you see "available":"1" twice !!</p>
+      <p className="text-lg">DYOR. Please click and confirm you see "available":"1" three times !!</p>
       </div>
     </div>
   </a>
